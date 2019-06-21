@@ -8,4 +8,19 @@ export default class Song {
         this.price = song.collectionPrice
         this.preview = song.previewUrl
     }
+    get Template() {
+        return `      
+    <div class="songs">
+        <h4>Title: ${this.title}</h4>
+        <img src="${this.albumArt}" />
+        <h4>Artist: ${this.artist}</h4>
+        <h4>Collection: ${this.collection}</h4>
+        <h4>Price: ${this.price}</h4>
+        <audio controls>
+        <source src="${this.preview}" type="">
+        </audio>
+
+    </div>
+    `
+    }
 }

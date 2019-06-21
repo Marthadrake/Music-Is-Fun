@@ -34,6 +34,12 @@ class ItunesService {
   addSubscriber(prop, fn) {
     _subscribers[prop].push(fn)
   }
+
+  addSong(newSong) {
+    let temp = this.Songs
+    temp.push(new Song(newSong))
+    setState("songs"), temp
+  }
 }
 
 
