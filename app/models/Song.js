@@ -10,7 +10,7 @@ export default class Song {
     }
     get Template() {
         return `      
-    <div class="songs">
+    <div class="songs card">
         <h4>Title: ${this.title}</h4>
         <img src="${this.albumArt}" />
         <h4>Artist: ${this.artist}</h4>
